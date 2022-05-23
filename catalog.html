@@ -2,11 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Каталог</title>
   </head>
   <body>
 <header class="page-header">
-  <a class="main-header-logo">
+  <a class="main-header-logo" href="index.html">
   <img src="#" alt="Логотип сайта Девайс">
   </a>
   <form class="search-form" action="#" method="post">
@@ -18,7 +18,10 @@
   <nav class="navigation">
     <ul class="navigation-list">
       <li class="navigation-item">
-        <a class="navigation-link" href="#">Войти</a>
+        <a class="navigation-link" href="#">Коля Петухов</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Выйти</a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="#">Сравнить</a>
@@ -44,5 +47,86 @@
   </nav>
   </header> 
 
-  <main class="main-catalog">
-  <h1 class="visually-hidden">Каталог магазина Девайс</h1>
+  <main class="main-inner">
+      <header class="inner-header">
+  <h1 class="inner-header-title">Моноподы для селфи</h1>
+  <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+    </li>
+    <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link">Моноподы для селфи</a>
+    </li>
+  </ul>
+</header>
+<section class="catalog-products">
+    <h2>Фильтр:</h2>
+    <form class="catalog-filter" action="htpps://echo.htmlacademy.ru/" method="get">
+<fieldset class="catalog-filter-group">
+    <legend class="catalog-filter-title">Стоимость</legend>
+    <!-- Будем учиться размечать этот блок в Компонентах -->
+</fieldset>
+<fieldset class="catalog-filter-group">
+    <legend class="catalog-filter-title">Цвет</legend>
+<label class="control">
+    <input class="control-input" type="checkbox" name="black" checked> 
+    Черный
+</label>
+<label class="control">
+    <input class="control-input" type="checkbox" name="white" checked> 
+    белый
+</label>
+<label class="control">
+    <input class="control-input" type="checkbox" name="navy"> 
+    Синий
+</label>
+<label class="control">
+    <input class="control-input" type="checkbox" name="red"> 
+    Красный
+</label>
+<label class="control">
+    <input class="control-input" type="checkbox" name="pink"> 
+    Розовый
+</label>
+</fieldset>
+<fieldset class="catalog-filter-group">
+    <legend class="catalog-filter-title">Bluetooth</legend>
+    <label class="control">
+        <input class="control-input" type="radio" name="wifi" value="yes"> 
+    Есть
+    </label>
+    <label class="control">
+        <input class="control-input" type="radio" name="wifi" value="no"> 
+    Нет
+    </label>
+</fieldset>
+        <button class="button" type="submit">Показать</button>
+    </form>
+    <h2>Сортировка:</h2>
+    <label class="select">
+    <select class="select-control">
+        <option value="popular">Популярные</option>
+        <option value="cheap">Сначала дешёвое</option>
+        <option value="expencive">Сначала дорогое</option>
+    </select>
+</label>
+<a href="#" class="button">
+    <span class="visually-hidden">От меньшего к большему</span>
+</a>
+<a href="#" class="button">
+    <span class="visually-hidden">От большего к меньшему</span>
+</a>
+<div class="product-card">
+    <a class="product-card-link" href="#">
+        <img class="product-card-image" src="#" alt="Любительская
+        селфи-палка">
+        <h3>Любительская селфи-палка</h3>
+        <b class="product-card-price">500 ₽</b>
+    </a>
+
+
+</div>
+</section>
