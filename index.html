@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header class="page-header">
     <a class="main-header-logo">
-      <img src="#" alt="Логотип сайта Девайс.">
+      <img src="images/header/logo-black.svg" width="145" height="36" alt="Логотип сайта Девайс.">
     </a>
     <form class="search-form" action="#" method="post">
       <input type="search" placeholder="Текст поиска">
@@ -54,7 +55,7 @@
 
         <li class="gallery-item">
           <h2 class="visually-hidden">Квадрокоптер</h2>
-          <img class="slider-image" src="#" alt="Квадрокоптер.">
+          <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
           <p class=”gallery-slogan”>Порхает как бабочка, жалит как пчела!</p>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным под стандартную камеру.</p>
@@ -75,7 +76,7 @@
 
         <li class="visually-hidden">
           <h2 class="visually-hidden">Фитнес-браслет</h2>
-          <img class="slider-image" src="#" alt="Фитнес-браслет.">
+          <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
           <p class=”gallery-slogan”>Худеем правильно!</p>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a class="button" href="#">Подробнее</a>
@@ -89,7 +90,7 @@
 
         <li class="visually-hidden">
           <h2 class="visually-hidden">Палка для селфи</h2>
-          <img class="slider-image" src="#" alt="Палка для селфи.">
+          <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="Палка для селфи.">
           <p class=”gallery-slogan”>Делай селфи, как Бен Стиллер!</p>
           <p>Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
@@ -145,12 +146,42 @@
     <section class="products">
       <h2 class="visually-hidden">Товары</h2>
       <ul class="products-list">
-        <li class="products-item"><a href="#">Виртуальная реальность</a></li>
-        <li class="products-item"><a href="#">Моноподы для селфи</a></li>
-        <li class="products-item"><a href="#">Экшн-камеры</a></li>
-        <li class="products-item"><a href="#">Фитнес-браслеты</a></li>
-        <li class="products-item"><a href="#">Умные часы</a></li>
-        <li class="products-item"><a href="#">Квадрокоптеры</a></li>
+        <li class="products-item">
+          <a href="#">
+            <img class="products-icon" src="images/catalog-category-1.svg" width="97" height="55" alt="">
+            <p>Виртуальная реальность</p>
+          </a>
+        </li>
+        <li class="products-item">
+          <a href="#">
+            <img class="products-icon" src="images/catalog-category-2.svg" width="86" height="117" alt="">
+            <p>Моноподы для селфи</p>
+          </a>
+        </li>
+        <li class="products-item">
+          <a href="#">
+            <img class="products-icon" src="images/catalog-category-3.svg" width="71" height="87" alt="">
+            <p>Экшн-камеры</p>
+          </a>
+        </li>
+        <li class="products-item">
+          <a href="#">
+            <img class="products-icon" src="images/catalog-category-4.svg" width="107" height="65" alt="">
+            <p>Фитнес-браслеты</p>
+          </a>
+        </li>
+        <li class="products-item">
+          <a href="#">
+            <img class="products-icon" src="images/catalog-category-5.svg" width="56" height="98" alt="">
+            <p>Умные часы</p>
+          </a>
+        </li>
+        <li class="products-item">
+          <a href="#">
+            <img class="products-icon" src="images/catalog-category-6.svg" width="132" height="69" alt="">
+            <p>Квадрокоптеры</p>
+          </a>
+        </li>
       </ul>
     </section>
 
@@ -236,7 +267,8 @@
   <footer class="page footer">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <img class="main-footer-logo" src="#" alt="Логотип сайта Девайс.">
+      <img class="main-footer-logo" src="images/footer/logo-yellow.svg" width="144,9" height="36"
+        alt="Логотип сайта Девайс.">
       <address class="footer-contacts-address">
         <p class="footer-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         <p class="footer-contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</p>
@@ -261,22 +293,25 @@
         <li class="footer-socials-item">
           <a class="button" href="https://t.me/htmlacademy">
             <span class="visally-hidden">Телеграм</span>
+            <img class="footer-socials-logo" src="images/footer/telegram.svg" width="13" height="11" alt="">
           </a>
         </li>
         <li class="footer-socials-item">
           <a class="button" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visally-hidden">Youtube</span>
+            <img class="footer-socials-logo" src="images/footer/youtube.svg" width="16" height="11" alt="">
           </a>
         </li>
         <li class="footer-socials-item">
           <a class="button" href="https://twitter.com/htmlacademy_ru">
             <span class="visally-hidden">Твиттер</span>
+            <img class="footer-socials-logo" src="images/footer/twitter.svg" width="15" height="14" alt="">
           </a>
         </li>
       </ul>
     </section>
     <a class="footer-logo" href="https://htmlacademy.ru/">
-      <img src="#" alt="Логотип сайта разработчика.">
+      <img src="images/footer/logo-html-academy.svg" width="114" height="33" alt="Логотип сайта разработчика.">
     </a>
   </footer>
 </body>
