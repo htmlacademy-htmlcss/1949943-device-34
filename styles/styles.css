@@ -44,12 +44,35 @@ body {
 .page-header {
   color: #000000;
   background: #FFE17F;
+  display:flex;
+  width: 1160px;
+  margin: 15px auto 0px;
 }
 
 .page-header a {
   color: #000000;
   background: #FFE17F;
   text-decoration:none;
+}
+.page-container {
+  display: flex;
+  margin:0 auto;
+  width: 1160px;
+  flex-direction: column;
+}
+
+.products-list {
+  display: flex;
+  margin:0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.products-item {
+  width: 160px;
+  height: 160px;
+  background: #FFE17F;
+  margin: 0 auto;
 }
 
 .user-menu-list, .advantages-description-text, .about-us-text, .contacts-text, .contacts-adress-text, 
@@ -235,6 +258,18 @@ text-transform: uppercase;
 .page-footer {
   color: #FFFFFF;
   background: #444444;
+}
+
+.page-footer-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.newsletter-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1440px;
 }
 
 .footer-contacts-address-text {
