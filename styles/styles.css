@@ -22,7 +22,18 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
+.main-container {
+flex-grow: 1;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -53,7 +64,6 @@ body {
 }
 
 .navigation-item, .button {
-  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -63,8 +73,8 @@ body {
   list-style: none;
 }
 
-.gallery-slogan, .about-us-title, .contacts-title, .newsletter-title, .inner-header-title {
-  font-family: "Raleway", sans-serif;
+.gallery-slogan, .about-us-title, .contacts-title, .newsletter-title, 
+.advantages-description-item, .inner-header-title {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -114,19 +124,10 @@ body {
 }
 
 .rare-delivery {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
   text-align: center; 
-  background-color: #F0F0F0;
 }
 
 .rare-delivery a{
-  font-family: "Raleway", sans-serif;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.2em;
@@ -135,10 +136,6 @@ body {
   color: #000000;
   text-align: center; 
   background-color: #F0F0F0;
-}
-
-.rare-delivery a {
-  text-decoration:none;
 }
 
 .logistics-item, .catalog-filter-item {
@@ -179,7 +176,6 @@ body {
 }
 
 .catalog-filter-title, .catalog-select-title {
-  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -226,6 +222,16 @@ body {
   color:#000000;
 }
 
+.pagination-prev, .pagination-next {
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+}
+
 .page-footer {
   color: #FFFFFF;
   background: #444444;
@@ -249,7 +255,6 @@ body {
 }
 
 .footer-navigation-link {
-  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
