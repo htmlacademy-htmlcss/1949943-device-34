@@ -26,13 +26,6 @@ html {
   height: 100%;
 }
 
-.container {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -57,16 +50,52 @@ body {
   background: #FFE17F;
   text-decoration:none;
 }
-.page-container {
+
+.gallery-item-container {
   display: flex;
   margin:0 auto;
   width: 1160px;
+}
+
+.slider-image {
+margin-right: auto;
+}
+
+.gallery-description-container {
+  display: flex;
   flex-direction: column;
+  width: 560px;
+}
+
+.advantages-container {
+  display: flex;
+  margin: 70px auto 0;
+  width: 1160px;
+}
+
+.advantages {
+  background-color: #F0F0F0;
+}
+
+.index-columns {
+  display: flex;
+  margin:0 auto;
+  width: 1160px;
+  justify-content: space-between;
+} 
+
+.about-us {
+  width: 520px;
+}
+
+.contacts {
+  width: 532px;
 }
 
 .products-list {
   display: flex;
   margin:0 auto;
+  width: 1160px;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -105,7 +134,6 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-  background-color: white;
 }
 
 .newsletter-title {
@@ -190,7 +218,6 @@ body {
   display: flex;
   margin: 0 auto;
   width: 1440px;
-  background-color: #F0F0F0;
 }
 
 .breadcrumbs-item, .control {
@@ -213,7 +240,6 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
-  background-color: white;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -247,7 +273,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   color:#000000;
-  background-color: #FFFFFF;
 }
 
 .pagination-item a {
@@ -265,11 +290,34 @@ letter-spacing: 0.2em;
 text-transform: uppercase;
 }
 
+.catalog-products {
+  background: #F0F0F0;
+}
+
+.inner-header {
+  display: flex;
+  margin: 0 auto;
+  width: 1079px;
+  flex-direction: column;
+}
+
+.catalog-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.catalog-filter-settings {
+  width: 320px;
+}
+
+.catalog-right-column {
+  width: 840px;
+}
+
 .page-footer {
   color: #FFFFFF;
   background: #444444;
-  width: 1440px;
-  margin: 0 auto;
 }
 
 .page-footer-container {
