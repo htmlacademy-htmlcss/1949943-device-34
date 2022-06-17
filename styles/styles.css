@@ -29,12 +29,17 @@ html {
 body {
   margin: 0;
   display: flex;
+  min-height: 100%;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
   background-color: white;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .page-header {
@@ -51,10 +56,12 @@ body {
   text-decoration:none;
 }
 
-.gallery-item-container {
-  display: flex;
+.gallery {
   margin:0 auto;
   width: 1160px;
+}
+.gallery-item-container {
+  display: flex;
 }
 
 .slider-image {
@@ -92,11 +99,13 @@ margin-right: auto;
   width: 532px;
 }
 
-.products-list {
-  display: flex;
+.products {
   margin:0 auto;
   width: 1160px;
-  flex-direction: row;
+}
+
+.products-list {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -178,7 +187,10 @@ margin-right: auto;
 }
 
 .rare-delivery {
-  text-align: center; 
+  display: flex;
+  margin: 0 auto; 
+  width: 1160px;
+  justify-content: center;
 }
 
 .rare-delivery a{
@@ -217,7 +229,7 @@ margin-right: auto;
 .newsletter-container {
   display: flex;
   margin: 0 auto;
-  width: 1440px;
+  width: 1160px;
 }
 
 .breadcrumbs-item, .control {
@@ -295,10 +307,10 @@ text-transform: uppercase;
 }
 
 .inner-header {
-  display: flex;
-  margin: 0 auto;
-  width: 1079px;
-  flex-direction: column;
+  box-sizing:border-box;
+  margin:0 auto;
+  padding-left: 200px;
+  width: 1160px;
 }
 
 .catalog-container {
@@ -323,7 +335,7 @@ text-transform: uppercase;
 .page-footer-container {
   display: flex;
   margin: 0 auto;
-  width: 1440px;
+  width: 1160px;
 }
 
 .footer-contacts-address-text {
