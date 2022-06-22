@@ -38,16 +38,42 @@ body {
   background-color: white;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-container {
   flex-grow: 1;
 }
 
 .page-header {
+  display: flex;
+  flex-direction: column;
   color: #000000;
   background: #FFE17F;
   display:flex;
   width: 1160px;
   margin: 15px auto 0px;
+}
+
+.header-line-1 {
+  display: flex;
+}
+
+.user-menu-list {
+  display: flex;
+  margin-left:auto;
+}
+
+.navigation-list {
+  display: flex;
 }
 
 .page-header a {
@@ -59,6 +85,7 @@ body {
 .gallery {
   margin:0 auto;
   width: 1160px;
+  margin-bottom: 70px;
 }
 .gallery-item-container {
   display: flex;
@@ -76,8 +103,9 @@ margin-right: auto;
 
 .advantages-container {
   display: flex;
-  margin: 70px auto 0;
+  margin: 0 auto;
   width: 1160px;
+  margin-bottom: 70px;
 }
 
 .advantages {
@@ -87,6 +115,7 @@ margin-right: auto;
 .index-columns {
   display: flex;
   margin:0 auto;
+  margin-bottom: 70px;
   width: 1160px;
   justify-content: space-between;
 } 
@@ -105,6 +134,9 @@ margin-right: auto;
 }
 
 .products-list {
+  margin:0 auto;
+  margin-bottom: 70px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -189,6 +221,7 @@ margin-right: auto;
 .rare-delivery {
   display: flex;
   margin: 0 auto; 
+  margin-bottom: 70px;
   width: 1160px;
   justify-content: center;
 }
@@ -309,7 +342,7 @@ text-transform: uppercase;
 .inner-header {
   box-sizing:border-box;
   margin:0 auto;
-  padding-left: 200px;
+  padding-left: 60px;
   width: 1160px;
 }
 
