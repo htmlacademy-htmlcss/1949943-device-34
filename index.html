@@ -63,18 +63,24 @@
               <p class="gallery-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
               <a class="button" href="#">Подробнее</a>
-              <dl class="gallery-specifications-list">
-                <dt class="gallery-specifications-name">Дальность полета</dt>
-                <dd class="gallery-specifications-item">
-                  <span class="gallery-specifications-value">800 м</span>
-                </dd>
-              </dl>
-              <dl class="gallery-specifications-list">
-                <dt class="gallery-specifications-name">Радиус поражения</dt>
-                <dd class="gallery-specifications-item">
-                  <span class="gallery-specifications-value">50 м</span>
-                </dd>
-              </dl>
+              <div class="gallery-specifications">
+                <dl class="gallery-specifications-list">
+                  <div class="gallery-specifications-description">
+                    <dt class="gallery-specifications-name">Дальность полета</dt>
+                    <dd class="gallery-specifications-item">
+                      <span class="gallery-specifications-value">800 м</span>
+                    </dd>
+                  </div>
+                </dl>
+                <dl class="gallery-specifications-list">
+                  <div class="gallery-specifications-description">
+                    <dt class="gallery-specifications-name">Радиус поражения</dt>
+                    <dd class="gallery-specifications-item">
+                      <span class="gallery-specifications-value">50 м</span>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
             </div>
           </div>
         </li>
@@ -276,14 +282,18 @@
 
     <section class="newsletter">
       <div class="newsletter-container">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
-          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="newsletter-email" placeholder="Ваш e-mail">
-          <button class="button" type="submit">Подписаться</button>
-        </form>
-        <p class="newsletter-free">Это бесплатно</p>
+        <div class="newsletter-main">
+          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+          <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
+            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        </div>
+        <div class="newsletter-line-2">
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input type="email" name="newsletter-email" placeholder="Ваш e-mail">
+            <button class="button subscribe-button" type="submit">Подписаться</button>
+          </form>
+          <p class="newsletter-free">Это бесплатно</p>
+        </div>
       </div>
     </section>
   </main>
