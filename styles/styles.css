@@ -58,25 +58,57 @@ body {
   flex-direction: column;
   color: #000000;
   background: #FFE17F;
-  display:flex;
+  display: flex;
   width: 1160px;
   margin: 15px auto 0px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .header-line-1 {
   display: flex;
+  justify-content: space-between;
+  margin: 30px 0px 30px 0px;
+}
+
+.search-input {
+  min-width: 357px;
+  height: 40px;
+  border: 2px solid #000000;
+  border-radius: 50px 0px 0px 50px;
+}
+
+.search-button {
+  width: 158px;
+  padding: 10px 56px;
+  margin-right: 26px;
+  border: 2px solid #000000;
+  border-radius: 0px 50px 50px 0px;
 }
 
 .user-menu-list {
   display: flex;
-  margin-left:auto;
+  margin: 0;
+  padding: 0;
+}
+
+.user-menu-item {
+  margin-right: 26px;
+}
+
+.user-menu-item:last-child {
+  margin-right: 0;
+}
+
+.user-profile {
+  display: block;
+  min-width: 231px;
 }
 
 .navigation-list {
   display: flex;
   margin: 0 auto;
   padding: 0;
-  width: 1040px;
 }
 
 .navigation-item {
@@ -94,19 +126,25 @@ body {
 .page-header a {
   color: #000000;
   background: #FFE17F;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .gallery {
-  margin:0 auto;
+  margin: 0 auto;
   width: 1160px;
   margin-bottom: 70px;
+}
+
+.gallery-list {
+  list-style-type: none;
+  padding: 0;
 }
 
 .gallery-slogan {
   margin: 0;
   margin-bottom: 29px;
 }
+
 .gallery-description {
   margin: 0;
   margin-bottom: 51px;
@@ -117,7 +155,7 @@ body {
 }
 
 .slider-image {
-margin-right: auto;
+  margin-right: 40px;
 }
 
 .gallery-description-container {
@@ -126,17 +164,32 @@ margin-right: auto;
   width: 560px;
 }
 
+.details-button {
+  margin-bottom: 49px;
+}
+
 .gallery-specifications {
   display: flex;
 }
+
+.gallery-specifications-list {
+  margin: 0;
+}
+
 .gallery-specifications-description {
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
+  text-align: left;
+  margin-right: 20px;
 }
 
 .gallery-specifications-name {
-  order:1;
+  order: 1;
+}
+
+.gallery-specifications-item {
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .advantages-container {
@@ -157,11 +210,12 @@ margin-right: auto;
 
 .index-columns {
   display: flex;
-  margin:0 auto;
+  margin: 0 auto;
   margin-bottom: 70px;
   width: 1160px;
   justify-content: space-between;
-} 
+  padding-top: 47px;
+}
 
 .about-us {
   width: 520px;
@@ -181,13 +235,25 @@ margin-right: auto;
   margin-bottom: 48px;
 }
 
+.contacts-subtitle {
+  margin: 30px 0px 15px;
+}
+
+.contacts-schedule {
+  padding: 0;
+}
+
+.text-us-button, .about-us-button {
+margin-top: 30px;
+}
+
 .products {
-  margin:0 auto;
+  margin: 0 auto;
   width: 1160px;
 }
 
 .products-list {
-  margin:0 auto;
+  margin: 0 auto;
   margin-bottom: 70px;
   padding: 0;
   display: flex;
@@ -201,8 +267,15 @@ margin-right: auto;
   margin: 0 auto;
 }
 
-.user-menu-list, .advantages-description-text, .about-us-text, .contacts-text, .contacts-adress-text, 
-.contacts-phone, .contacts-schedule-item, .newsletter-text, .newsletter-free {
+.user-menu-list,
+.advantages-description-text,
+.about-us-text,
+.contacts-text,
+.contacts-adress-text,
+.contacts-phone,
+.contacts-schedule-item,
+.newsletter-text,
+.newsletter-free {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -212,7 +285,8 @@ margin-right: auto;
   list-style: none;
 }
 
-.navigation-item, .button {
+.navigation-item,
+.button {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -222,8 +296,12 @@ margin-right: auto;
   list-style: none;
 }
 
-.gallery-slogan, .about-us-title, .contacts-title, .newsletter-title, 
-.advantages-description-item, .inner-header-title {
+.gallery-slogan,
+.about-us-title,
+.contacts-title,
+.newsletter-title,
+.advantages-description-item,
+.inner-header-title {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -233,17 +311,18 @@ margin-right: auto;
 .newsletter-title {
   background-color: #F0F0F0;
   margin: 0;
-  width: 348px;px;
+  width: 348px;
+  px;
 }
 
 .newsletter-text {
   margin: 0;
-  width:560px;
+  width: 560px;
 }
 
 .subscribe-button {
   padding: 18px 39px;
-} 
+}
 
 .gallery-description {
   font-family: "Rubik", sans-serif;
@@ -272,36 +351,45 @@ margin-right: auto;
   color: #000000;
 }
 
-.products-item, .advantages-item, .advantages-description-item, .contacts-schedule-item, 
-.footer-navigation-item, .footer-socials-item, .breadcrumbs-item, .product-card, .pagination-item {
+.products-item,
+.advantages-item,
+.advantages-description-item,
+.contacts-schedule-item,
+.footer-navigation-item,
+.footer-socials-item,
+.breadcrumbs-item,
+.product-card,
+.pagination-item {
   list-style: none;
 }
 
 .products-item a {
   color: #000000;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .rare-delivery {
   display: flex;
-  margin: 0 auto; 
+  margin: 0 auto;
   margin-bottom: 70px;
   width: 1160px;
   justify-content: center;
+  padding: 40px 125px;
+  background-color: #F0F0F0;
 }
 
-.rare-delivery a{
+.rare-delivery a {
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  text-align: center; 
-  background-color: #F0F0F0;
+  text-align: center;
 }
 
-.logistics-item, .catalog-filter-item {
+.logistics-item,
+.catalog-filter-item {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -334,7 +422,7 @@ margin-right: auto;
   display: flex;
   width: 1160px;
   margin-top: 64px;
-  margin-bottom:147px;
+  margin-bottom: 144px;
   justify-content: space-between;
 }
 
@@ -342,25 +430,33 @@ margin-right: auto;
   display: flex;
   width: 1158px;
   margin: 0 auto;
+  padding-bottom: 56px;
   justify-content: space-between;
 }
 
-.breadcrumbs-item, .control {
+.newsletter-input {
+height: 55px;
+width: 557px;
+}
+
+.breadcrumbs-item,
+.control {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color:#000000;
+  color: #000000;
   background-color: #FFFFFF;
 }
 
-.breadcrumbs-item a{
-  text-decoration:none;
-  color:#000000;
+.breadcrumbs-item a {
+  text-decoration: none;
+  color: #000000;
 }
 
-.catalog-filter-title, .catalog-select-title {
+.catalog-filter-title,
+.catalog-select-title {
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -388,7 +484,7 @@ margin-right: auto;
 }
 
 .product-card a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .pagination-item {
@@ -397,22 +493,23 @@ margin-right: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color:#000000;
+  color: #000000;
 }
 
 .pagination-item a {
-  text-decoration:none;
-  color:#000000;
+  text-decoration: none;
+  color: #000000;
 }
 
-.pagination-prev, .pagination-next {
-font-family: 'Raleway', sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: 0.2em;
-text-transform: uppercase;
+.pagination-prev,
+.pagination-next {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .catalog-products {
@@ -420,8 +517,8 @@ text-transform: uppercase;
 }
 
 .inner-header {
-  box-sizing:border-box;
-  margin:0 auto;
+  box-sizing: border-box;
+  margin: 0 auto;
   padding-left: 60px;
   width: 1160px;
 }
@@ -449,6 +546,48 @@ text-transform: uppercase;
   display: flex;
   margin: 0 auto;
   width: 1160px;
+  padding: 62px 140px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-contacts {
+  display: flex;
+  width: 239px;
+  flex-direction: column;
+}
+
+.footer-column-2 {
+  display: flex;
+  width: 444px;
+  flex-direction: column;
+}
+
+.footer-socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.footer-socials-item {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.footer-socials-item:last-child {
+  margin-right: 0px;
+}
+
+.footer-navigation-list {
+  display: flex; 
+  padding: 0;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 62px;
 }
 
 .footer-contacts-address-text {
@@ -474,5 +613,5 @@ text-transform: uppercase;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF; 
+  color: #FFFFFF;
 }

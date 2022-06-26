@@ -14,14 +14,14 @@
     </a>
     <div class="header-line-1">
       <form class="search-form" action="#" method="post">
-        <input type="search" placeholder="Текст поиска">
+        <input class="search-input" type="search" placeholder="Текст поиска">
         <button type="button" class="search-button">
           Найти
         </button>
       </form>
       <ul class="user-menu-list">
         <li class="user-menu-item">
-          <a class="user-menu-link" href="#">Войти</a>
+          <a class="user-menu-link user-profile" href="#">Войти</a>
         </li>
         <li class="user-menu-item">
           <a class="user-menu-link" href="#">Сравнить</a>
@@ -62,7 +62,7 @@
               <p class="gallery-slogan">Порхает как бабочка, жалит как пчела!</p>
               <p class="gallery-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
-              <a class="button" href="#">Подробнее</a>
+              <a class="button details-button" href="#">Подробнее</a>
               <div class="gallery-specifications">
                 <dl class="gallery-specifications-list">
                   <div class="gallery-specifications-description">
@@ -259,7 +259,7 @@
           <li class="logistics-item">СДИК</li>
           <li class="logistics-item">ТоксБерри</li>
         </ul>
-        <a class="button" href="#">Подробнее о нас</a>
+        <a class="button about-us-button" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
@@ -275,7 +275,7 @@
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="button" href="#">Напишите нам</a>
+        <a class="button text-us-button" href="#">Напишите нам</a>
       </section>
 
     </div>
@@ -289,7 +289,7 @@
         </div>
         <div class="newsletter-line-2">
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" name="newsletter-email" placeholder="Ваш e-mail">
+            <input class="newsletter-input" type="email" name="newsletter-email" placeholder="Ваш e-mail">
             <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
           <p class="newsletter-free">Это бесплатно</p>
@@ -307,48 +307,52 @@
           alt="Логотип сайта Девайс.">
         <address class="footer-contacts-address">
           <p class="footer-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <p class="footer-contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</p>
         </address>
       </section>
-      <nav class="footer-navigation">
-        <ul class="footer-navigation-list">
-          <li class="footer-navigation-item">
-            <a class="footer-navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a class="footer-navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a class="footer-navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="footer-socials">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-socials-list">
-          <li class="footer-socials-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <span class="visaully-hidden">Телеграм</span>
-              <img class="footer-socials-logo" src="images/footer/telegram.svg" width="13" height="11" alt="">
-            </a>
-          </li>
-          <li class="footer-socials-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Youtube</span>
-              <img class="footer-socials-logo" src="images/footer/youtube.svg" width="16" height="11" alt="">
-            </a>
-          </li>
-          <li class="footer-socials-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Твиттер</span>
-              <img class="footer-socials-logo" src="images/footer/twitter.svg" width="15" height="14" alt="">
-            </a>
-          </li>
-        </ul>
-      </section>
-      <a class="footer-logo" href="https://htmlacademy.ru/">
-        <img src="images/footer/logo-html-academy.svg" width="114" height="33" alt="Логотип сайта разработчика.">
-      </a>
+      <div class="footer-column-2">
+        <nav class="footer-navigation">
+          <ul class="footer-navigation-list">
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="footer-socials">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-socials-list">
+            <li class="footer-socials-item">
+              <a class="button socials-button" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграм</span>
+                <img class="footer-socials-logo" src="images/footer/telegram.svg" width="13" height="11" alt="">
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a class="button socials-button" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span>
+                <img class="footer-socials-logo" src="images/footer/youtube.svg" width="16" height="11" alt="">
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a class="button socials-button" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Твиттер</span>
+                <img class="footer-socials-logo" src="images/footer/twitter.svg" width="15" height="14" alt="">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer-column-3">
+        <p class="footer-contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</p>
+        <a class="footer-logo" href="https://htmlacademy.ru/">
+          <img src="images/footer/logo-html-academy.svg" width="114" height="33" alt="Логотип сайта разработчика.">
+        </a>
+      </div>
     </div>
   </footer>
 </body>
