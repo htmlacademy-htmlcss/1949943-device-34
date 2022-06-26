@@ -107,6 +107,7 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
 }
@@ -439,6 +440,28 @@ height: 55px;
 width: 557px;
 }
 
+.inner-header {
+  box-sizing: border-box;
+  margin: 35px auto;
+  padding-left: 60px;
+  width: 1160px;
+}
+
+.inner-header-title {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.breadcrumbs-item {
+  margin-right: 36px;
+}
+
 .breadcrumbs-item,
 .control {
   font-family: "Rubik", sans-serif;
@@ -455,14 +478,34 @@ width: 557px;
   color: #000000;
 }
 
+.catalog-select {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.select-control {
+  width: 141px;
+  height: 30px;
+}
+
 .catalog-filter-title,
 .catalog-select-title {
+  display: block;
+  box-sizing: border-box;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.product-list {
+  margin: 0;
+  padding: 0;
 }
 
 .product-card-name {
@@ -487,6 +530,27 @@ width: 557px;
   text-decoration: none;
 }
 
+.pagination-container {
+  display: flex;
+  width: 760px;
+  background-color: #EBEBEB;
+  margin: 44px 40px 78px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 760px;
+  height: 71px;
+}
+
+.pagination-number {
+  display: flex;
+}
+
 .pagination-item {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -494,6 +558,14 @@ width: 557px;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 10px 15px;
 }
 
 .pagination-item a {
@@ -510,17 +582,12 @@ width: 557px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  padding: 25px;
+  width: 128px;
 }
 
 .catalog-products {
   background: #F0F0F0;
-}
-
-.inner-header {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding-left: 60px;
-  width: 1160px;
 }
 
 .catalog-container {
