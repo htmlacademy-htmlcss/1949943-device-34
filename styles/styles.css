@@ -53,6 +53,11 @@ body {
   flex-grow: 1;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .page-header {
   display: flex;
   flex-direction: column;
@@ -88,6 +93,7 @@ body {
 
 .user-menu-list {
   display: flex;
+  flex-wrap: wrap;
   width: 497px;
   margin: 0;
   padding: 0;
@@ -114,6 +120,7 @@ body {
 
 .navigation-item {
   margin-right: 45px;
+  padding-bottom: 15px;
 }
 
 .navigation-item:first-child {
@@ -170,6 +177,7 @@ body {
 
 .gallery-specifications {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .gallery-specifications-list {
@@ -179,8 +187,8 @@ body {
 .gallery-specifications-description {
   display: flex;
   flex-direction: column;
-  text-align: left;
   margin-right: 20px;
+  padding-bottom: 38px;
 }
 
 .gallery-specifications-name {
@@ -199,13 +207,37 @@ body {
   margin-bottom: 70px;
 }
 
-.advantages-description-item {
+.advantages-description-title {
   margin: 0;
   margin-bottom: 34px;
 }
 
+.advantages-description-text {
+  margin: 0;
+}
+
+.advantages-description-item {
+  display: flex;
+  flex-direction: column;
+  width: 694px;
+  margin: 72px 63px 144px 116px;
+
+}
+
 .advantages {
   background-color: #F0F0F0;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 64px;
+}
+
+.advantages-button {
+  display: block;
+  width: 280px;
+  margin-bottom: 35px;
 }
 
 .index-columns {
@@ -243,8 +275,14 @@ body {
   padding: 0;
 }
 
+.index-columns p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 .text-us-button,
 .about-us-button {
+  display: block;
   margin-top: 30px;
 }
 
@@ -254,11 +292,12 @@ body {
 }
 
 .products-list {
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 70px;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
 
 .icon-wrapper {
@@ -367,7 +406,7 @@ body {
 
 .products-item,
 .advantages-item,
-.advantages-description-item,
+.advantages-description-list,
 .contacts-schedule-item,
 .footer-navigation-item,
 .footer-socials-item,
@@ -375,6 +414,8 @@ body {
 .product-card,
 .pagination-item {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .products-item a {
@@ -531,7 +572,6 @@ body {
 
 .product-card-image {
   display: block;
-  object-fit: contain;
   margin-bottom: 32px;
 }
 
@@ -545,7 +585,7 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
-  max-width: 220px;
+  max-width: 250px;
 }
 
 .product-card-price {
@@ -703,12 +743,15 @@ body {
 }
 
 .footer-contacts-phone {
+  display: block;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #FFFFFF;
   text-decoration: underline;
+  margin-bottom: 63px;
 }
 
 .footer-navigation-link {
