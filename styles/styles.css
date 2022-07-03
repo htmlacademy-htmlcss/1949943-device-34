@@ -243,8 +243,9 @@ body {
   padding: 0;
 }
 
-.text-us-button, .about-us-button {
-margin-top: 30px;
+.text-us-button,
+.about-us-button {
+  margin-top: 30px;
 }
 
 .products {
@@ -266,7 +267,7 @@ margin-top: 30px;
   height: 160px;
   background: #FFE17F;
   margin: 0 auto;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   margin-bottom: 32px;
 }
@@ -276,9 +277,9 @@ margin-top: 30px;
 }
 
 .products-section-name {
-width: 160px;
-padding: 0;
-margin: 0;
+  width: 160px;
+  padding: 0;
+  margin: 0;
 }
 
 .user-menu-list,
@@ -446,8 +447,8 @@ margin: 0;
 }
 
 .newsletter-input {
-height: 55px;
-width: 557px;
+  height: 55px;
+  width: 557px;
 }
 
 .inner-header {
@@ -460,6 +461,10 @@ width: 557px;
 .inner-header-title {
   margin: 0;
   margin-bottom: 16px;
+}
+
+.main-inner-page {
+  background-color: #F0F0F0;
 }
 
 .breadcrumbs {
@@ -493,6 +498,7 @@ width: 557px;
   justify-content: space-between;
   padding: 20px 40px;
   align-items: center;
+  background-color: #F0F0F0;
 }
 
 .select-control {
@@ -515,17 +521,31 @@ width: 557px;
 }
 
 .product-list {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  gap: 40px;
   margin: 0;
-  padding: 0;
+  padding: 70px 40px 44px;
+  background-color: #FFFFFF;
+}
+
+.product-card-image {
+  display: block;
+  object-fit: contain;
+  margin-bottom: 32px;
 }
 
 .product-card-name {
+  display: block;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  max-width: 220px;
 }
 
 .product-card-price {
@@ -535,10 +555,25 @@ width: 557px;
   font-size: 18px;
   line-height: 21px;
   color: #444444;
+  margin-left: auto;
+}
+
+.product-card-description {
+  display: flex;
+  flex-grow: 1;
 }
 
 .product-card a {
   text-decoration: none;
+}
+
+.show-more-button {
+  display: block;
+  width: 760px;
+  text-align: center;
+  padding: 18px 0px;
+  margin: 0 auto 44px;
+  border: 3px solid #E5E5E5;
 }
 
 .pagination {
@@ -549,7 +584,7 @@ width: 557px;
   width: 760px;
   height: 71px;
   background-color: #EBEBEB;
-  margin: 44px 40px 78px;
+  margin: 0px 40px 78px;
 }
 
 .pagination-item {
@@ -595,10 +630,6 @@ width: 557px;
   width: 128px;
 }
 
-.catalog-products {
-  background: #F0F0F0;
-}
-
 .catalog-container {
   display: flex;
   margin: 0 auto;
@@ -611,6 +642,7 @@ width: 557px;
 
 .catalog-right-column {
   width: 840px;
+  background-color: #FFFFFF;
 }
 
 .page-footer {
@@ -655,7 +687,7 @@ width: 557px;
 }
 
 .footer-navigation-list {
-  display: flex; 
+  display: flex;
   padding: 0;
   justify-content: space-between;
   margin: 0;
