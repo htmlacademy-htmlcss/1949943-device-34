@@ -15,7 +15,7 @@
     <div class="user-menu-wrapper">
       <form class="search-form" action="#" method="post">
         <input class="search-input" type="search" placeholder="Текст поиска">
-        <button type="button" class="search-button">
+        <button type="submit" class="search-button">
           Найти
         </button>
       </form>
@@ -53,10 +53,11 @@
     <h1 class="visually-hidden">Магазин Девайс</h1>
 
     <section class="gallery">
+      <h2 class="visually-hidden">Галлерея товаров</h2>
       <ul class="gallery-list">
         <li class="gallery-item">
           <div class="gallery-item-container">
-            <h2 class="visually-hidden">Квадрокоптер</h2>
+            <h3 class="visually-hidden">Квадрокоптер</h3>
             <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
             <div class="gallery-description-container">
               <p class="gallery-slogan">Порхает как бабочка, жалит как пчела!</p>
@@ -87,50 +88,62 @@
 
         <li class="visually-hidden">
           <div class="gallery-item-container">
-            <h2 class="visually-hidden">Фитнес-браслет</h2>
+            <h3 class="visually-hidden">Фитнес-браслет</h3>
             <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
             <div class="gallery-description-container">
               <p class="gallery-slogan">Худеем правильно!</p>
               <p class="gallery-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                 занятия и соблюдать диету.</p>
-              <a class="button" href="#">Подробнее</a>
-              <dl class="gallery-specifications-list">
-                <dt class="gallery-specifications-name">Без подзарядки</dt>
-                <dd class="gallery-specifications-item">
-                  <span class="gallery-specifications-value">48 часов</span>
-                </dd>
-              </dl>
+              <a class="button details-button" href="#">Подробнее</a>
+              <div class="gallery-specifications">
+                <dl class="gallery-specifications-list">
+                  <div class="gallery-specifications-description">
+                    <dt class="gallery-specifications-name">Без подзарядки</dt>
+                    <dd class="gallery-specifications-item">
+                      <span class="gallery-specifications-value">48 часов</span>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
             </div>
           </div>
         </li>
 
         <li class="visually-hidden">
           <div class="gallery-item-container">
-            <h2 class="visually-hidden">Палка для селфи</h2>
+            <h3 class="visually-hidden">Палка для селфи</h3>
             <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="Палка для селфи.">
             <div class="gallery-description-container">
               <p class="gallery-slogan">Делай селфи, как Бен Стиллер!</p>
               <p class="gallery-description">Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              <a class="button" href="#">Подробнее</a>
-              <dl class="gallery-specifications-list">
-                <dt class="gallery-specifications-name">Длина палки</dt>
-                <dd class="gallery-specifications-item">
-                  <span class="gallery-specifications-value">8,5 м</span>
-                </dd>
-              </dl>
-              <dl class="gallery-specifications-list">
-                <dt class="gallery-specifications-name">Вес палки</dt>
-                <dd class="gallery-specifications-item">
-                  <span class="gallery-specifications-value">5 кг</span>
-                </dd>
-              </dl>
-              <dl class="gallery-specifications-list">
-                <dt class="gallery-specifications-name">Материал</dt>
-                <dd class="gallery-specifications-item">
-                  <span class="gallery-specifications-value">Карбон</span>
-                </dd>
-              </dl>
+              <a class="button details-button" href="#">Подробнее</a>
+              <div class="gallery-specifications">
+                <dl class="gallery-specifications-list">
+                  <div class="gallery-specifications-description">
+                    <dt class="gallery-specifications-name">Длина палки</dt>
+                    <dd class="gallery-specifications-item">
+                      <span class="gallery-specifications-value">8,5 м</span>
+                    </dd>
+                  </div>
+                </dl>
+                <dl class="gallery-specifications-list">
+                  <div class="gallery-specifications-description">
+                    <dt class="gallery-specifications-name">Вес палки</dt>
+                    <dd class="gallery-specifications-item">
+                      <span class="gallery-specifications-value">5 кг</span>
+                    </dd>
+                  </div>
+                </dl>
+                <dl class="gallery-specifications-list">
+                  <div class="gallery-specifications-description">
+                    <dt class="gallery-specifications-name">Материал</dt>
+                    <dd class="gallery-specifications-item">
+                      <span class="gallery-specifications-value">Карбон</span>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
             </div>
           </div>
         </li>
@@ -218,36 +231,36 @@
     </section>
 
     <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
       <div class="advantages-container">
-        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <a class="button" href="#">Доставка</a>
+            <a class="button advantages-button" href="#">Доставка</a>
           </li>
           <li class="advantages-item">
-            <a class="button" href="#">Гарантия</a>
+            <a class="button advantages-button" href="#">Гарантия</a>
           </li>
           <li class="advantages-item">
-            <a class="button" href="#">Кредит</a>
+            <a class="button advantages-button" href="#">Кредит</a>
           </li>
         </ul>
 
         <ul class="advantages-description-list">
           <li class="advantages-description-item">
-            <h3 class="advantages-description-item">Доставка</h3>
+            <h3 class="advantages-description-title">Доставка</h3>
             <p class="advantages-description-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
               совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
 
-          <li class="advantages-description-item">
-            <h3 class="advantages-description-item">Гарантия</h3>
+          <li class="advantages-description-item visually-hidden">
+            <h3 class="advantages-description-title">Гарантия</h3>
             <p class="advantages-description-text">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </li>
 
-          <li class="advantages-description-item">
-            <h3 class="advantages-description-item">Кредит</h3>
+          <li class="advantages-description-item visually-hidden">
+            <h3 class="advantages-description-title">Кредит</h3>
             <p class="advantages-description-text">Залезть в долговую яму стало проще!
               Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
               Выгодные для банка, разумеется.</p>
@@ -360,7 +373,7 @@
         </section>
       </div>
       <div class="footer-column-3">
-        <p class="footer-contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</p>
+        <a class="footer-contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
         <a class="footer-logo" href="https://htmlacademy.ru/">
           <img src="images/footer/logo-html-academy.svg" width="114" height="33" alt="Логотип сайта разработчика.">
         </a>
