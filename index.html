@@ -15,8 +15,9 @@
       <img src="images/header/logo-black.svg" width="145" height="36" alt="Логотип сайта Девайс.">
     </a>
     <div class="user-menu-wrapper">
-      <form class="search-form" action="#" method="post">
-        <input class="search-input" type="search" placeholder="Текст поиска">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="search-on-page" class="visually-hidden">Поиск по сайту</label>
+        <input class="search-input" id="search-on-page" type="search" placeholder="Текст поиска">
         <button type="submit" class="search-button">
           Найти
         </button>
@@ -66,24 +67,20 @@
               <p class="gallery-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
               <a class="button details-button" href="#">Подробнее</a>
-              <div class="gallery-specifications">
-                <dl class="gallery-specifications-list">
-                  <div class="gallery-specifications-description">
-                    <dt class="gallery-specifications-name">Дальность полета</dt>
-                    <dd class="gallery-specifications-item">
-                      <span class="gallery-specifications-value">800 м</span>
-                    </dd>
-                  </div>
-                </dl>
-                <dl class="gallery-specifications-list">
-                  <div class="gallery-specifications-description">
-                    <dt class="gallery-specifications-name">Радиус поражения</dt>
-                    <dd class="gallery-specifications-item">
-                      <span class="gallery-specifications-value">50 м</span>
-                    </dd>
-                  </div>
-                </dl>
-              </div>
+              <dl class="gallery-specifications-list">
+                <div class="gallery-specifications-description">
+                  <dt class="gallery-specifications-name">Дальность полета</dt>
+                  <dd class="gallery-specifications-item">
+                    <span class="gallery-specifications-value">800 м</span>
+                  </dd>
+                </div>
+                <div class="gallery-specifications-description">
+                  <dt class="gallery-specifications-name">Радиус поражения</dt>
+                  <dd class="gallery-specifications-item">
+                    <span class="gallery-specifications-value">50 м</span>
+                  </dd>
+                </div>
+              </dl>
             </div>
           </div>
         </li>
@@ -97,16 +94,14 @@
               <p class="gallery-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                 занятия и соблюдать диету.</p>
               <a class="button details-button" href="#">Подробнее</a>
-              <div class="gallery-specifications">
-                <dl class="gallery-specifications-list">
-                  <div class="gallery-specifications-description">
-                    <dt class="gallery-specifications-name">Без подзарядки</dt>
-                    <dd class="gallery-specifications-item">
-                      <span class="gallery-specifications-value">48 часов</span>
-                    </dd>
-                  </div>
-                </dl>
-              </div>
+              <dl class="gallery-specifications-list">
+                <div class="gallery-specifications-description">
+                  <dt class="gallery-specifications-name">Без подзарядки</dt>
+                  <dd class="gallery-specifications-item">
+                    <span class="gallery-specifications-value">48 часов</span>
+                  </dd>
+                </div>
+              </dl>
             </div>
           </div>
         </li>
@@ -120,33 +115,28 @@
               <p class="gallery-description">Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <a class="button details-button" href="#">Подробнее</a>
-              <div class="gallery-specifications">
-                <dl class="gallery-specifications-list">
-                  <div class="gallery-specifications-description">
-                    <dt class="gallery-specifications-name">Длина палки</dt>
-                    <dd class="gallery-specifications-item">
-                      <span class="gallery-specifications-value">8,5 м</span>
-                    </dd>
-                  </div>
-                </dl>
-                <dl class="gallery-specifications-list">
-                  <div class="gallery-specifications-description">
-                    <dt class="gallery-specifications-name">Вес палки</dt>
-                    <dd class="gallery-specifications-item">
-                      <span class="gallery-specifications-value">5 кг</span>
-                    </dd>
-                  </div>
-                </dl>
-                <dl class="gallery-specifications-list">
-                  <div class="gallery-specifications-description">
-                    <dt class="gallery-specifications-name">Материал</dt>
-                    <dd class="gallery-specifications-item">
-                      <span class="gallery-specifications-value">Карбон</span>
-                    </dd>
-                  </div>
-                </dl>
-              </div>
+              <dl class="gallery-specifications-list">
+                <div class="gallery-specifications-description">
+                  <dt class="gallery-specifications-name">Длина палки</dt>
+                  <dd class="gallery-specifications-item">
+                    <span class="gallery-specifications-value">8,5 м</span>
+                  </dd>
+                </div>
+                <div class="gallery-specifications-description">
+                  <dt class="gallery-specifications-name">Вес палки</dt>
+                  <dd class="gallery-specifications-item">
+                    <span class="gallery-specifications-value">5 кг</span>
+                  </dd>
+                </div>
+                <div class="gallery-specifications-description">
+                  <dt class="gallery-specifications-name">Материал</dt>
+                  <dd class="gallery-specifications-item">
+                    <span class="gallery-specifications-value">Карбон</span>
+                  </dd>
+                </div>
+              </dl>
             </div>
+          </div>
           </div>
         </li>
       </ul>
@@ -237,13 +227,13 @@
       <div class="advantages-container">
         <ul class="advantages-list">
           <li class="advantages-item">
-            <a class="button advantages-button" href="#">Доставка</a>
+            <button type="button" class="button advantages-button" alt="">Доставка</button>
           </li>
           <li class="advantages-item">
-            <a class="button advantages-button" href="#">Гарантия</a>
+            <button type="button" class="button advantages-button" alt="">Гарантия</button>
           </li>
           <li class="advantages-item">
-            <a class="button advantages-button" href="#">Кредит</a>
+            <button type="button" class="button advantages-button" alt="">Кредит</button>
           </li>
         </ul>
 
@@ -316,7 +306,9 @@
         </div>
         <div class="newsletter-form-wrapper">
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="newsletter-input" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+            <label for="subscribe" class="visually-hidden">Подписаться на рассылку</label>
+            <input class="newsletter-input" id="subscribe" type="email" name="newsletter-email"
+              placeholder="Ваш e-mail">
             <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
           <p class="newsletter-free">Это бесплатно</p>
@@ -333,7 +325,7 @@
         <img class="main-footer-logo" src="images/footer/logo-yellow.svg" width="145" height="36"
           alt="Логотип сайта Девайс.">
         <address class="footer-contacts-address">
-          <p class="footer-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </address>
       </section>
       <div class="footer-column-2">

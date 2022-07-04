@@ -29,6 +29,7 @@ html {
 body {
   margin: 0;
   display: flex;
+  min-width: 1440px;
   min-height: 100%;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
@@ -175,12 +176,9 @@ img {
   margin-bottom: 49px;
 }
 
-.gallery-specifications {
+.gallery-specifications-list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.gallery-specifications-list {
   margin: 0;
 }
 
@@ -238,6 +236,7 @@ img {
   display: block;
   width: 280px;
   margin-bottom: 35px;
+  border: none;
 }
 
 .index-columns {
@@ -728,11 +727,20 @@ img {
 
 .footer-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
-  justify-content: space-between;
   margin: 0;
   margin-bottom: 62px;
 }
+
+.footer-navigation-item {
+  margin-right: 35px;
+}
+
+.footer-navigation-item:last-child {
+  margin-right: 0px;
+}
+
 
 .footer-contacts-address-text {
   font-family: "Rubik", sans-serif;
