@@ -23,14 +23,14 @@
           7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.39c0-2.8 
           2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z" fill="#000" />
         </svg>
-        <input class="search-input" id="search-on-page" type="search" placeholder="Текст поиска">
+        <input class="search-input" id="search-on-page" type="search" placeholder="Поиск по сайту">
         <button type="submit" class="search-button">
           Найти
         </button>
       </form>
       <ul class="user-menu-list">
-        <li class="user-menu-item user-profile">
-          <a class="user-menu-link" href="#">
+        <li class="user-menu-item">
+          <a class="user-menu-link user-profile" href="#">
             <svg class="profile-icon" aria-hidden="true" focusable="false" width="13" height="12" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.39h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S3 
@@ -38,16 +38,16 @@
             </svg>
             Войти</a>
         </li>
-        <li class="user-menu-item compare-button">
-          <a class="user-menu-link" href="#">
+        <li class="user-menu-item">
+          <a class="user-menu-link compare-button" href="#">
             <svg class="compare-icon" aria-hidden="true" focusable="false" width="10" height="13" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M6 .39H4v12h2v-12ZM2 4.39H0v8h2v-8ZM10 3.39H8v9h2v-9Z" fill="#000" />
             </svg>
             Сравнить</a>
         </li>
-        <li class="user-menu-item cart-button">
-          <a class="user-menu-link" href="#">
+        <li class="user-menu-item">
+          <a class="user-menu-link cart-button" href="#">
             <svg class="cart-icon" aria-hidden="true" focusable="false" width="16" height="14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#a)">
@@ -68,37 +68,32 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <div class="catalog-navigation-container">
-            <a class="navigation-link catalog-navigation" href="catalog.html">Каталог товаров</a>
-            <button class="popover-catalog-button">
-              <span class="visually-hidden">Развернуть каталог</span>
+          <a class="navigation-link catalog-navigation" href="catalog.html">Каталог товаров
 
-              <div class="popover-catalog">
-                <ul class="popover-catalog-container">
-                  <li class="popover-catalog-item">
-                    <a class="catalog-item-link" href="#">Виртуальная реальность</a>
-                  </li>
-                  <li class="popover-catalog-item">
-                    <a class="catalog-item-link" href="#">Моноподы для cелфи</a>
-                  </li>
-                  <li class="popover-catalog-item">
-                    <a class="catalog-item-link" href="#">Экшн-камеры</a>
-                  </li>
-                  <li class="popover-catalog-item">
-                    <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="popover-catalog-item">
-                    <a class="catalog-item-link" href="#">Умные часы</a>
-                  </li>
-                  <li class="popover-catalog-item popover-catalog-item-quadrocopter">
-                    <a class="catalog-item-link" href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="popover-catalog">
+              <ul class="popover-catalog-container">
+                <li class="popover-catalog-item">
+                  <a class="catalog-item-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="popover-catalog-item">
+                  <a class="catalog-item-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="popover-catalog-item">
+                  <a class="catalog-item-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="popover-catalog-item">
+                  <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="popover-catalog-item">
+                  <a class="catalog-item-link" href="#">Умные часы</a>
+                </li>
+                <li class="popover-catalog-item popover-catalog-item-quadrocopter">
+                  <a class="catalog-item-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
 
-            </button>
-
-          </div>
+          </a>
 
         </li>
         <li class="navigation-item">
@@ -254,7 +249,7 @@
           </a>
         </li>
         <li class="products-item">
-          <a href="#">
+          <a class="products-link" href="#">
             <div class="icon-wrapper icon-monopod">
               <img class="products-icon" src="images/catalog-category-2.svg" width="86" height="117" alt="">
             </div>
@@ -262,7 +257,7 @@
           </a>
         </li>
         <li class="products-item">
-          <a href="#">
+          <a class="products-link" href="#">
             <div class="icon-wrapper">
               <img class="products-icon" src="images/catalog-category-3.svg" width="71" height="87" alt="">
             </div>
@@ -270,7 +265,7 @@
           </a>
         </li>
         <li class="products-item">
-          <a href="#">
+          <a class="products-link" href="#">
             <div class="icon-wrapper">
               <img class="products-icon" src="images/catalog-category-4.svg" width="107" height="65" alt="">
             </div>
@@ -278,7 +273,7 @@
           </a>
         </li>
         <li class="products-item">
-          <a href="#">
+          <a class="products-link" href="#">
             <div class="icon-wrapper">
               <img class="products-icon" src="images/catalog-category-5.svg" width="56" height="98" alt="">
             </div>
@@ -286,7 +281,7 @@
           </a>
         </li>
         <li class="products-item">
-          <a href="#">
+          <a class="products-link" href="#">
             <div class="icon-wrapper">
               <img class="products-icon" src="images/catalog-category-6.svg" width="132" height="69" alt="">
             </div>
@@ -335,35 +330,7 @@
     </section>
 
     <a class="rare-delivery-link" href="#">
-      <svg class="track-icon" aria-hidden="true" focusable="false" width="125" height="100" viewBox="0 0 125 100"
-        fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="125" height="100" fill="#FFE17F" />
-        <g clip-path="url(#clip0_11468_3080)">
-          <path
-            d="M85.7 50.4L79.2 42.2C78.9 41.8 78.5 41.6 78 41.6H69.7V36.5C69.7 35.7 69 35 68.2 35H40.5C39.7 35 39 35.7 39 36.5C39 37.3 39.7 38 40.5 38H66.7V59.7H54.8C54.2 57.8 52.4 56.4 50.3 56.4C47.7 56.4 45.5 58.6 45.5 61.2C45.5 63.8 47.7 66 50.3 66C52.4 66 54.2 64.6 54.8 62.7H68.2C69 62.7 69.7 62 69.7 61.2V44.6H77.3L83 51.9V59.8H80.8C80.2 57.9 78.4 56.5 76.3 56.5C73.7 56.5 71.5 58.7 71.5 61.3C71.5 63.9 73.6 66.1 76.3 66.1C78.4 66.1 80.2 64.7 80.8 62.8H84.5C85.3 62.8 86 62.1 86 61.3V51.4C86 51 85.9 50.7 85.7 50.4ZM50.3 63C49.3 63 48.5 62.2 48.5 61.2C48.5 60.2 49.3 59.4 50.3 59.4C51.3 59.4 52.1 60.2 52.1 61.2C52.1 62.2 51.2 63 50.3 63ZM76.4 63C75.4 63 74.6 62.2 74.6 61.2C74.6 60.2 75.4 59.4 76.4 59.4C77.4 59.4 78.2 60.2 78.2 61.2C78.2 62.2 77.3 63 76.4 63Z"
-            fill="black" />
-          <path
-            d="M58.4 44.6C59.2 44.6 59.9 43.9 59.9 43.1C59.9 42.3 59.2 41.6 58.4 41.6H43.8C43 41.6 42.3 42.3 42.3 43.1C42.3 43.9 43 44.6 43.8 44.6H58.4Z"
-            fill="black" />
-          <path
-            d="M56.7 49.7C56.7 48.9 56 48.2 55.2 48.2H40.5C39.7 48.2 39 48.9 39 49.7C39 50.5 39.7 51.2 40.5 51.2H55.2C56 51.2 56.7 50.5 56.7 49.7Z"
-            fill="black" />
-        </g>
-        <defs>
-          <clipPath id="clip0_11468_3080">
-            <rect width="47" height="31" fill="white" transform="translate(39 35)" />
-          </clipPath>
-        </defs>
-      </svg>
       <p class="rare-delivery-title">Доставим редкий товар под заказ</p>
-      <svg class="information-icon" aria-hidden="true" focusable="false" width="41" height="40" viewBox="0 0 41 40"
-        fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5" />
-        <g opacity="0.3">
-          <path d="M21 14H19V16H21V14Z" fill="black" />
-          <path d="M21 18H19V26H21V18Z" fill="black" />
-        </g>
-      </svg>
     </a>
 
     <div class="index-columns">
@@ -424,8 +391,9 @@
     <div class="page-footer-container">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <img class="main-footer-logo" src="images/footer/logo-yellow.svg" width="145" height="36"
-          alt="Логотип сайта Девайс.">
+        <svg class="main-footer-logo" aria-hidden="true" focusable="false" width="145" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.2 0v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.5 3.1C5.5 36 0 30.2 0 22.7 0 15.2 5.5 9.4 12.1 9.4c3.4 0 5.9 1.2 7.5 3.1V0h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6-6.2s-6 2.4-6 6.2c0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.7 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14-5.8-14-13.3C29.6 15.2 35 9.4 43 9.4c7.4 0 12.8 5.7 12.8 13.3 0 1.1-.1 2.1-.3 3H37.6c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9ZM82.1 10.1l-9.3 25.2h-8.6l-9.3-25.2h8.4l5.3 16 5.3-16h8.2ZM83.4 10.1H91v25.2h-7.6V10.1ZM93.6 22.7c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.2 2.6 11.4 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.7 2.4-5.7 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.6 3.8C116.3 33.4 112 36 107 36c-7.7 0-13.4-5.8-13.4-13.3ZM132.8 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14-5.8-14-13.3 0-7.5 5.5-13.3 13.4-13.3 7.4 0 12.8 5.7 12.8 13.3 0 1.1-.1 2.1-.3 3h-17.9c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9ZM83.4 0v10.1L91 0h-7.6Z" fill="#FFC700"/></svg>
+        <!-- <img class="main-footer-logo" src="images/footer/logo-yellow.svg" width="145" height="36"
+          alt="Логотип сайта Девайс."> -->
         <address class="footer-contacts-address">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </address>
