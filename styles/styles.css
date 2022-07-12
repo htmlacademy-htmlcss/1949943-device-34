@@ -294,7 +294,7 @@ img {
   display: flex;
   list-style: none;
   margin-bottom: 20px;
-  font-family: 'Rubik';
+  font-family: 'Rubik',sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -803,7 +803,7 @@ img {
   margin: 0;
   padding: 18px 5px;
   border: 3px solid #C4C4C4;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1167,7 +1167,7 @@ img {
   width: 141px;
   height: 30px;
   border: none;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1303,7 +1303,7 @@ img {
 .show-more-button {
   display: block;
   width: 760px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
