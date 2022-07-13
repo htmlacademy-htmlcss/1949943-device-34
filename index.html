@@ -23,7 +23,7 @@
           7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.39c0-2.8 
           2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z" fill="#000" />
         </svg>
-        <input class="search-input" id="search-on-page" type="search" placeholder="Поиск по сайту">
+        <input class="search-input" id="search-on-page" type="search" placeholder="Поиск по сайту" required>
         <button type="submit" class="search-button">
           Найти
         </button>
@@ -46,7 +46,7 @@
             </svg>
             Сравнить</a>
         </li>
-        <li class="user-menu-item">
+        <li class="user-menu-item">  
           <a class="user-menu-link cart-button" href="#">
             <svg class="cart-icon" aria-hidden="true" focusable="false" width="16" height="14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -61,6 +61,7 @@
                 </clipPath>
               </defs>
             </svg>
+            <span class="cart-item-number">2</span>
             Корзина</a>
         </li>
       </ul>
@@ -374,7 +375,7 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscribe" class="visually-hidden">Подписаться на рассылку</label>
             <input class="newsletter-input" id="subscribe" type="email" name="newsletter-email"
-              placeholder="Ваш e-mail">
+              placeholder="Ваш e-mail" required>
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
           <p class="newsletter-free">Это бесплатно</p>
@@ -388,8 +389,7 @@
     <div class="page-footer-container">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <img class="main-footer-logo" src="images/footer/logo-yellow.svg" width="145" height="36"
-          alt="Логотип сайта Девайс.">
+        <img class="main-footer-logo" src="images/footer/logo-yellow.svg" width="145" height="36" alt="Логотип сайта Девайс.">
         <address class="footer-contacts-address">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </address>
